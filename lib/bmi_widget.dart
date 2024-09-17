@@ -88,9 +88,9 @@ class _BmiWidget extends State<BmiWidget> {
       context: context,
       builder: (ctx) {
         return AlertDialog(
-          backgroundColor: const Color(0xffEEEDEB),
-          titleTextStyle: TextStyle(
-            color: kColorScheme.primaryContainer,
+          backgroundColor: Colors.white,
+          titleTextStyle: const TextStyle(
+            color: Colors.black,
           ),
           shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(8),
@@ -107,10 +107,9 @@ class _BmiWidget extends State<BmiWidget> {
               onPressed: () {
                 Navigator.pop(context);
               },
-              child: Text(
+              child: const Text(
                 'Okay',
-                style: TextStyle(
-                    fontSize: 14, color: kColorScheme.primaryContainer),
+                style: TextStyle(fontSize: 14, color: Colors.black),
               ),
             )
           ],
